@@ -20,3 +20,9 @@ cc_library {
     defaults: ["bootctrl_hal_defaults"],
     shared_libs: ["libgptutils.sdm660"],
 }
+
+cc_library_shared {
+    name: "bootctrl.sdm660",
+    defaults: ["bootctrl_hal_defaults"],
+    shared_libs: ["libgptutils.sdm660"],
+}
