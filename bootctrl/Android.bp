@@ -15,13 +15,11 @@
 // limitations under the License.
 //
 
-cc_library {
-    name: "bootctrl.sdm660",
-    defaults: ["bootctrl_hal_defaults"],
-    shared_libs: ["libgptutils.sdm660"],
+soong_namespace {
+    imports: ["hardware/qcom/bootctrl"]
 }
 
-cc_library_shared {
+cc_library {
     name: "bootctrl.sdm660",
     defaults: ["bootctrl_hal_defaults"],
     shared_libs: ["libgptutils.sdm660"],
