@@ -25,9 +25,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter zangya zangyapro, $(TARGET_DEVICE)),)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+ifneq ($(filter zangya zangyapro, $(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 
