@@ -5,11 +5,5 @@ subdirs = [
 ]
 
 soong_namespace {
-    imports: ["hardware/qcom/bootctrl", "vendor/bp/sdm660-common/bootctrl"]
-}
-
-cc_library {
-    name: "bootctrl.sdm660",
-    defaults: ["bootctrl_hal_defaults"],
-    static_libs: ["libgptutils.sdm660"],
+    imports: ["hardware/qcom/bootctrl"]
 }
