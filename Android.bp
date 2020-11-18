@@ -1,6 +1,7 @@
 subdirs = [
     "light",
     "vibrator",
+    "bootctrl"
 ]
 
 soong_namespace {
